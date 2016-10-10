@@ -44,8 +44,8 @@
         <value>Fusionstor</value>
     </util:list>
 
-    <util:list id="VCenterBackupStorageMetric">
-        <value>VCenterBackupStorage</value>
+    <util:list id="VCenterMetric">
+        <value>VCenter</value>
     </util:list>
 
     <util:map id="BackupStoragePrimaryStorageMetrics" value-type="java.util.List">
@@ -54,7 +54,7 @@
         <entry key="Ceph" value-ref="CephMetric"/>
         <entry key="ImageStoreBackupStorage" value-ref="ImageStoreBackupStorageMetric"/>
         <entry key="SimulatorBackupStorage" value-ref="SimulatorBackupStorageMetric"/>
-        <entry key="VCenterBackupStorage" value-ref="VCenterBackupStorageMetric"/>
+        <entry key="VCenter" value-ref="VCenterMetric"/>
     </util:map>
 
     <bean id="HostAllocatorManager" class="org.zstack.compute.allocator.HostAllocatorManagerImpl">
